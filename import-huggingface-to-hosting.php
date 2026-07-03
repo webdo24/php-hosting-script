@@ -45,7 +45,7 @@ if (curl_errno($ch)) {
 } else {
     $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     if ($statusCode == 200) {
-        echo "<h3>১ জিবি ব্যাকআপ ফাইলটি সফলভাবে আপনার হোস্টিংয়ে ইমপোর্ট হয়েছে!</h3>";
+        echo "<h3>ব্যাকআপ ফাইলটি সফলভাবে আপনার হোস্টিংয়ে ইমপোর্ট হয়েছে!</h3>";
         echo "ফাইল পাথ: <b>" . realpath($saveTo) . "</b>";
     } else {
         echo "ডাউনলোড ব্যর্থ হয়েছে। HTTP Status Code: " . $statusCode . "<br>";
